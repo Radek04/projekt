@@ -16,11 +16,6 @@ Celem projektu jest rozwiązanie problemu znajdowania podtablic o sumie równej 
    ```bash
    cd Projekt-Algorytmy
    ```
-3. Upewnij się, że masz zainstalowane środowisko Python (min. wersja 3.7).
-4. Zainstaluj wymagane pakiety (jeśli dotyczy):
-   ```bash
-   pip install -r requirements.txt
-   ```
 
 ## Przykład użycia
 Dla tablicy wejściowej:
