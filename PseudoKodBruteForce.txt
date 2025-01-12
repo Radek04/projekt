@@ -1,0 +1,22 @@
+    liczbaOperacji = 0  // Inicjalizacja licznika operacji
+    
+    Dla iP = 0 do N - 1:
+        liczbaOperacji = liczbaOperacji + 1
+        suma = 0  // Inicjalizacja sumy dla podciągu
+        liczbaOperacji = liczbaOperacji + 1
+        
+        Dla iK = iP do N - 1:
+            liczbaOperacji = liczbaOperacji + 1
+            suma = suma + tab[iK]  // Sumowanie elementów podciągu
+            liczbaOperacji = liczbaOperacji + 1
+            
+            Jeżeli suma > (N - iK) * 10 lub suma < (N - iK) * -10:
+                liczbaOperacji = liczbaOperacji + 1
+                Zakończ wewnętrzną pętlę  // Break - kończymy szukanie tego podciągu
+            
+            Inaczej Jeżeli suma == 0:
+                liczbaOperacji = liczbaOperacji + 1
+                Wypisz elementy podciągu od iP do iK
+                Wypisz nową linię
+                
+    Zwróć liczbaOperacji  // Zwróć liczbę operacji wykonanych w algorytmie

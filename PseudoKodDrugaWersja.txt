@@ -1,0 +1,32 @@
+Funkcja WyszukiwanieDrugaWersja(tab):
+    Inicjalizuj tablicaSum jako tablica o rozmiarze N
+    sumaPom = 0
+    liczbaOperacji = 0
+    
+    // Generowanie tablicy pomocniczej z sumami prefixowymi
+    Dla i = 0 do N - 1:
+        liczbaOperacji = liczbaOperacji + 1
+        sumaPom = sumaPom + tab[i]  // Sumowanie elementów tablicy
+        liczbaOperacji = liczbaOperacji + 1
+        tablicaSum[i] = sumaPom  // Przechowywanie sumy do tablicaSum
+        liczbaOperacji = liczbaOperacji + 1
+    
+    Wypisz nową linię
+    
+    // Szukanie podciągów sumujących się do 0
+    Dla i = 0 do N - 1:
+        liczbaOperacji = liczbaOperacji + 1
+        Dla j = i do N - 1:
+            liczbaOperacji = liczbaOperacji + 1
+            Jeżeli tablicaSum[j] == 0 i i == 0:
+                liczbaOperacji = liczbaOperacji + 1
+                Wypisz podciąg od 0 do j
+                Wypisz nową linię
+            Inaczej Jeżeli tablicaSum[j] - tablicaSum[i] == 0 i j > i:
+                liczbaOperacji = liczbaOperacji + 1
+                z = i + 1  // Ustawienie początkowego indeksu dla wypisania
+                liczbaOperacji = liczbaOperacji + 1
+                Wypisz podciąg od z do j
+                Wypisz nową linię
+    
+    Zwróć liczbaOperacji  // Zwrócenie liczby wykonanych operacji
