@@ -7,16 +7,6 @@ Celem projektu jest rozwiązanie problemu znajdowania podtablic o sumie równej 
 1. Pod tablica musi sumować się do zera.
 2. Liczby w pod tablicach muszą znajdować się koło siebie w tablicy wejściowej.
 
-## Instrukcja instalacji
-1. Sklonuj repozytorium na swój komputer:
-   ```bash
-   git clone https://github.com/TwojeKonto/Projekt-Algorytmy.git
-   ```
-2. Przejdź do katalogu projektu:
-   ```bash
-   cd Projekt-Algorytmy
-   ```
-
 ## Przykład użycia
 Dla tablicy wejściowej:
 ```
@@ -36,6 +26,12 @@ Program wypisze:
 - `Projekt.cpp`: Główny plik programu.
 - `WynikiDzialaniaKodu.txt`: Testy jednostkowe.
 - `README.md`: Dokumentacja projektu.
+- `PseudoKodBruteForce.txt`: Pseudokod kodu BruteForce.
+- `PseudoKodDrugaWersja.txt`: Pseudokod kodu w wersji drugiej.
+- `SchematBruteForce.png`: Schemat blokowy kodu BruteForce.
+- `SchematDrugaWersja.png`: Schemat blokowy kodu w wersji drugiej.
+- `ZaleznoscCzasuIIloscObliczenOdCzasu(zWyswietlaniem).jpg`: Wykres zależności czasu i ilości operacji od czasu(z wyświetlaniem).
+- `ZaleznoscCzasuIIloscObliczenOdCzasu(bezWyswietlaniem).jpg`: Wykres zależności czasu i ilości operacji od czasu(bez wyświetlania).
 
 ## Autor
 Radosław Szynal  
