@@ -63,13 +63,13 @@ long long int wyszukiwanieBruteForce(int suma,int iP,int iK,int tab[N]) {
 				break;
 			} else if(suma==0) { // Sprawdzanie, czy wyszukane podciągi spełniają waruneki
 				liczbaOperacji++;
-	//			cout<<"[";
+				cout<<"[";
 				for(int k=iP; k<=iK; k++) {
 					liczbaOperacji++;
-	//				cout<<setw(4)<<tab[k]<<","; // Wypisywanie
+					cout<<setw(4)<<tab[k]<<","; // Wypisywanie
 				}
-	//			cout<<"]";
-	//			cout<<endl;
+				cout<<"]";
+				cout<<endl;
 			}
 
 		}
@@ -99,26 +99,26 @@ long long int wyszukiwanieDrugaWersja(int tab[N]) {
 			liczbaOperacji++;
 			if(tablicaSum[j]==0 && i==0) {
 				liczbaOperacji++;
-	//			cout<<"[ ";
+				cout<<"[ ";
 				for(int k=0; k<=j; k++) {
 					liczbaOperacji++;
-//					cout<<setw(4)<<tab[k]<<",";
+					cout<<setw(4)<<tab[k]<<",";
 				}
-	//			cout<<" ]";
-	//			cout<<endl;
+				cout<<" ]";
+				cout<<endl;
 			} else if(tablicaSum[j]-tablicaSum[i]==0 &&  j>i) {
 				liczbaOperacji++;
 				z=i;
 				liczbaOperacji++;
 				z+=1;
 				liczbaOperacji++;
-	//			cout<<"[ ";
+				cout<<"[ ";
 				for(z; z<=j; z++) {
-	//				cout<<setw(4)<<tab[z]<<",";
+					cout<<setw(4)<<tab[z]<<",";
 					liczbaOperacji++;
 				}
-	//			cout<<" ]";
-	//			cout<<endl;
+				cout<<" ]";
+				cout<<endl;
 			}
 		}
 	}
